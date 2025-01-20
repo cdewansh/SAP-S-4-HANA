@@ -28,11 +28,6 @@ sap.ui.define([
                 this.getRouter().initialize();
 
                 // set the device model
-
-
-
-
-                console.log("chaman");
                 this.setModel(models.createDeviceModel(), "device");
             }
         });

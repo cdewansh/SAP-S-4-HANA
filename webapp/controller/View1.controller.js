@@ -7,6 +7,9 @@ function (Controller) {
     return Controller.extend("project1.controller.View1", {
         onInit: function () {
 
+        },
+        OnShowHello: function () {
+            alert("Hello World")
         }
     });
 });
