@@ -1,0 +1,15 @@
+<mvc:View controllerName="project1.controller.CssVariables"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="CssVariables" title="Amusing">
+        <content>
+        <!-- <VBox id="_IDGenVBox">
+        <Text id ="textID" text ="My first application" class = "textColor" />
+        <Text id ="textID2" text ="{i18n>NICE}" />
+        </VBox> -->
+        <Button id = "ButtonID" class = "btn" text = "Don't click me" press = "onButtonClick" >
+        </Button>        
+        </content>
+    </Page>
+</mvc:View>
+

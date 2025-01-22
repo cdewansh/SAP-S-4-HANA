@@ -92,6 +92,21 @@
                     "target": [
                         "TargetView1"
                     ]
+                },
+                {
+                    "name": "View1",
+                    "pattern": "View1",
+                    "target": "View1"
+                },
+                {
+                    "name": "helloWorld",
+                    "pattern": "helloWorld",
+                    "target": "helloWorld"
+                },
+                {
+                    "name": "CssVariables",
+                    "pattern": "CssVariables",
+                    "target": "CssVariables"
                 }
             ],
             "targets": {
@@ -101,6 +116,18 @@
                     "clearControlAggregation": false,
                     "viewId": "View1",
                     "viewName": "View1"
+                },
+                "helloWorld": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "helloWorld",
+                    "viewName": "helloWorld"
+                },
+                "CssVariables": {
+                   "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "CssVariables",
+                    "viewName": "CssVariables" 
                 }
             }
         },
@@ -109,6 +136,7 @@
             "type": "XML",
             "async": true,
             "id": "App"
+
         }
     }
 }

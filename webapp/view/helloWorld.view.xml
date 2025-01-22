@@ -1,0 +1,9 @@
+<mvc:View controllerName="project1.controller.helloWorld"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="helloWorld" title="{i18n>title}">
+        <content>
+        <Button text="{i18n>hello}" press="OnShowHello"/>
+        </content>
+    </Page>
+</mvc:View>

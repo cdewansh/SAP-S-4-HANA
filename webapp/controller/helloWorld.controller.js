@@ -4,17 +4,13 @@ sap.ui.define([
 function (Controller) {
     "use strict";
 
-    return Controller.extend("project1.controller.View1", {
+    return Controller.extend("project1.controller.helloWorld", {
         onInit: function () {
 
         },
-        OnNavToHello: function () {
+        OnNavtoHello: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             oRouter.navTo("helloWorld")
-        },
-        OnNavToCss: function() {
-            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("CssVariables")
         },
         OnShowHello: function () {
             alert("Hello World")

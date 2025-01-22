@@ -1,1 +1,37 @@
 /* Enter your custom styles here */
+:root {
+    --main-height: 500px;
+    --main-width: 500px;
+    --main-color: blue;
+    --main-size: 16px;
+    --main-font: 10px;
+    }
+    .textColor{
+        color: #612ea4;
+        font-size: 50px;
+        font-family: auto;
+    }
+    /* Style buttons */
+    .btn .sapMBtnInner  {
+        /* background-color: var(--main-color); Blue background */
+        border: medium solid var(--main-color); /* Remove borders
+        /* background: white; */
+        color: var(--main-color);
+        /* padding: 10px 16px; Some padding
+        padding: var(--main-size) var(--main-size); */
+        font-size: auto; /* Set a font size */
+        cursor: not-allowed; /* Mouse pointer on hover */
+        top: var(--main-height);
+        left: var(--main-width);
+        text-align: justify;
+      }
+      
+      /* Darker background on mouse-over */
+      .btn:hover .sapMBtnInner{
+        background-color: var(--main-color);
+        color: white;
+        cursor: no-drop;
+      }
+
+      /* Message-Box confirm */
+      .confirm
