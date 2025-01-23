@@ -5,6 +5,7 @@
         <ToolbarSpacer />
         <Button text="1.Hello World!" press = "OnNavToHello" /> 
         <Button text="2.Css Variables" press = "OnNavToCss" />
+        <Button text="3.JS Object &amp; Tables" press = "OnNavToJSO" />
         </Toolbar>
     <Page id="page" title="{i18n>title}">
         <content>

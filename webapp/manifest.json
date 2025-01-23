@@ -107,6 +107,11 @@
                     "name": "CssVariables",
                     "pattern": "CssVariables",
                     "target": "CssVariables"
+                },
+                {
+                    "name": "JsObject",
+                    "pattern": "JsObject",
+                    "target": "JsObject"
                 }
             ],
             "targets": {
@@ -128,6 +133,12 @@
                     "transition": "slide",
                     "viewId": "CssVariables",
                     "viewName": "CssVariables" 
+                },
+                "JsObject": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "JsObject",
+                    "viewName": "JsObject"
                 }
             }
         },

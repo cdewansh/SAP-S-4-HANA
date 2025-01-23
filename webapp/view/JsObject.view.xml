@@ -1,0 +1,45 @@
+<mvc:View
+    xmlns:table="sap.ui.table"
+    controllerName="project1.controller.JsObject"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="JsObject"
+        title="{i18n>title}"
+    >
+        <content>
+            <Table items="{/employees}">
+                <columns>
+                    <Column>
+                        <Text text="Employee Name" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee ID" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee Location" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee Designation" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee Experience" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{name}" />
+                            <Text text="{id}" />
+                            <Text text="{location}" />
+                            <Text text="{designation}" />
+                            <Text text="{experience}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
