@@ -17,8 +17,12 @@ function (Controller) {
             oRouter.navTo("CssVariables")
         },
         OnNavToJSO: function () {
-            var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             oRouter.navTo("JsObject")
+        },
+        OnNavToJson: function () {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("JsonModel")
         },
         OnShowHello: function () {
             alert("Hello World")

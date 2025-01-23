@@ -1,0 +1,25 @@
+{                
+    "employees": [
+        {
+            "name": "John Doe",
+            "id": "E123",
+            "location": "New York",
+            "designation": "Software Engineer",
+            "experience": "5 years"
+        },
+        {
+            "name": "Jane Smith",
+            "id": "E124",
+            "location": "London",
+            "designation": "Project Manager",
+            "experience": "8 years"
+        },
+        {
+            "name": "Sam Wilson",
+            "id": "E125",
+            "location": "Sydney",
+            "designation": "QA Engineer",
+            "experience": "3 years"
+        }
+    ]
+            }

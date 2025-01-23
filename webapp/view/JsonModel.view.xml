@@ -1,0 +1,39 @@
+<mvc:View controllerName="project1.controller.JsonModel"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <Page id="JsonModel" title="Json Model">
+        <content>
+       <Table items="{jsonData>/employees}">
+                <columns>
+                    <Column>
+                        <Text text="Employee Name" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee ID" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee Location" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee Designation" />
+                    </Column>
+                    <Column>
+                        <Text text="Employee Experience" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{jsonData>name}" />
+                            <Text text="{jsonData>id}" />
+                            <Text text="{jsonData>location}" />
+                            <Text text="{jsonData>designation}" />
+                            <Text text="{jsonData>experience}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

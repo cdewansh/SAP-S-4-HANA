@@ -66,6 +66,10 @@
                 "dataSource": "mainService",
                 "preload": true,
                 "settings": {}
+            },
+            "jsonData": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/jsonData.json"
             }
         },
         "resources": {
@@ -112,6 +116,11 @@
                     "name": "JsObject",
                     "pattern": "JsObject",
                     "target": "JsObject"
+                },
+                {
+                    "name": "JsonModel",
+                    "pattern": "JsonModel",
+                    "target": "JsonModel"
                 }
             ],
             "targets": {
@@ -139,6 +148,12 @@
                     "transition": "slide",
                     "viewId": "JsObject",
                     "viewName": "JsObject"
+                },
+                "JsonModel": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "JsonModel",
+                    "viewName": "JsonModel"
                 }
             }
         },
