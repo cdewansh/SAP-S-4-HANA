@@ -1,0 +1,10 @@
+<mvc:View controllerName="project1.controller.TwoWayBinding"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="TwoWayBinding" title="{i18n>title}">
+        <content>
+        <Input value="{/employees/name}"></Input>
+        <Text text= "{/employees/name}"></Text>
+        </content>
+    </Page>
+</mvc:View>

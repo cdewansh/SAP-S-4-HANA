@@ -24,6 +24,10 @@ function (Controller) {
         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             oRouter.navTo("JsonModel")
         },
+        OnNavTo2Way: function () {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("TwoWayBinding")
+        },
         OnShowHello: function () {
             alert("Hello World")
         }

@@ -121,7 +121,13 @@
                     "name": "JsonModel",
                     "pattern": "JsonModel",
                     "target": "JsonModel"
+                },
+                {
+                    "name": "TwoWayBinding",
+                    "pattern": "TwoWayBinding",
+                    "target": "TwoWayBinding"
                 }
+
             ],
             "targets": {
                 "TargetView1": {
@@ -154,6 +160,12 @@
                     "transition": "slide",
                     "viewId": "JsonModel",
                     "viewName": "JsonModel"
+                },
+                "TwoWayBinding": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "TwoWayBinding",
+                    "viewName": "TwoWayBinding"
                 }
             }
         },

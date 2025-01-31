@@ -1,14 +1,15 @@
 <mvc:View controllerName="project1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
+    <Page id="page" title="UI5 Mini Projects">
     <Toolbar >
         <ToolbarSpacer />
         <Button text="1.Hello World!" press = "OnNavToHello" /> 
         <Button text="2.Css Variables" press = "OnNavToCss" />
         <Button text="3.JS Object &amp; Tables" press = "OnNavToJSO" />
         <Button text="4.json Model" press = "OnNavToJson" />
+        <Button text="5.Two Way Data Binding" press = "OnNavTo2Way" />
         </Toolbar>
-    <Page id="page" title="{i18n>title}">
         <content>
         </content>
     </Page>
