@@ -126,6 +126,11 @@
                     "name": "TwoWayBinding",
                     "pattern": "TwoWayBinding",
                     "target": "TwoWayBinding"
+                },
+                {
+                    "name": "InputList",
+                    "pattern": "InputList",
+                    "target": "InputList"
                 }
 
             ],
@@ -166,6 +171,12 @@
                     "transition": "slide",
                     "viewId": "TwoWayBinding",
                     "viewName": "TwoWayBinding"
+                },
+                "InputList": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "InputList",
+                    "viewName": "InputList"
                 }
             }
         },

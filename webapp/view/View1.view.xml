@@ -9,6 +9,7 @@
         <Button text="3.JS Object &amp; Tables" press = "OnNavToJSO" />
         <Button text="4.json Model" press = "OnNavToJson" />
         <Button text="5.Two Way Data Binding" press = "OnNavTo2Way" />
+        <Button text="6.Input List" press = "OnNavToInputList" />
         </Toolbar>
         <content>
         </content>

@@ -28,6 +28,10 @@ function (Controller) {
         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             oRouter.navTo("TwoWayBinding")
         },
+        OnNavToInputList: function () {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("InputList")
+        },
         OnShowHello: function () {
             alert("Hello World")
         }

@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="project1.controller.InputList"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="InputList"
+        title="UI5 Mini Projects"
+    >
+        <Input
+            id="employeeNameInput"
+            placeholder="Enter employee name"
+            value="{jsonData>/name}"
+            submit="onEnterPress"
+        />
+        <List items="{jsonData>/employees}">
+            <StandardListItem title="{jsonData>name}" />
+        </List>
+    </Page>
+</mvc:View>
