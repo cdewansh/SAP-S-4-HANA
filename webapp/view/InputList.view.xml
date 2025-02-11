@@ -9,13 +9,14 @@
         title="UI5 Mini Projects"
     >
         <Input
-            id="employeeNameInput"
-            placeholder="Enter employee name"
-            value="{jsonData>/name}"
+            id="productNameInput"
+            placeholder="Enter Product name"
+            value="{listModel>/currentProductName}"
+            class = "sapUILargeMargin"
             submit="onEnterPress"
         />
-        <List items="{jsonData>/employees}">
-            <StandardListItem title="{jsonData>name}" />
+        <List items="{listModel>/products}">
+            <StandardListItem title="{listModel>productName}" />
         </List>
     </Page>
 </mvc:View>
