@@ -7,6 +7,7 @@ function (Controller, JSONModel) {
 
     return Controller.extend("project1.controller.JsonModel", {
         onInit: function () {
+            debugger
                     // Have to set the data model to the controller and in turn view which use this controller
                     // var oModel = new JSONModel(dummyData);
                     // this.getView().setModel(oModel)

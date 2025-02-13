@@ -32,6 +32,18 @@ function (Controller) {
         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             oRouter.navTo("InputList")
         },
+        OnNavToForm: function () {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("Form")
+        },
+        OnNavToProductList: function () {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("ProductList")
+        },
+        OnNavToComboBox: function () {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("ComboBox")
+        },
         OnShowHello: function () {
             alert("Hello World")
         }

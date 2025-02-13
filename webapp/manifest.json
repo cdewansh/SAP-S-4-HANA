@@ -70,6 +70,14 @@
             "jsonData": {
                 "type": "sap.ui.model.json.JSONModel",
                 "uri": "model/jsonData.json"
+            },
+            "productsData": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/productsData.json"
+            },
+            "data": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/data.json"
             }
         },
         "resources": {
@@ -131,6 +139,26 @@
                     "name": "InputList",
                     "pattern": "InputList",
                     "target": "InputList"
+                },
+                {
+                    "name": "Form",
+                    "pattern": "Form",
+                    "target": "Form"
+                },
+                {
+                    "name": "ProductList",
+                    "pattern": "ProductList",
+                    "target": "ProductList"
+                },
+                {
+                    "name": "ProductDetails",
+                    "pattern": "ProductDetails",
+                    "target": "ProductDetails"
+                },
+                {
+                    "name": "ComboBox",
+                    "pattern": "ComboBox",
+                    "target": "ComboBox"
                 }
 
             ],
@@ -177,6 +205,30 @@
                     "transition": "slide",
                     "viewId": "InputList",
                     "viewName": "InputList"
+                },
+                "Form": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "Form",
+                    "viewName": "Form"
+                },
+                "ProductList": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "ProductList",
+                    "viewName": "ProductList"
+                },
+                "ProductDetails": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "ProductDetails",
+                    "viewName": "ProductDetails"
+                },
+                "ComboBox":{
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "viewId": "ComboBox",
+                    "viewName": "ComboBox"
                 }
             }
         },

@@ -1,0 +1,77 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    controllerName="project1.controller.ProductList"
+    displayBlock="true"
+>
+    <Page
+        id="ProductList"
+        title="{i18n>title}"
+    >
+        <content>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button
+                    text="Go to Details"
+                    press="onNavToDetails"
+                />
+            </Toolbar>
+            <VBox>
+                <Text
+                    text="Product List"
+                    class="productTitle"
+                />
+                <List
+                    id="employeeList"
+                    items="{productsData>/products}"
+                    class="sapUiLargeMargin productList"
+                    width="70%"
+                >
+                    <items>
+                        <CustomListItem>
+                            <VBox>
+                                <RadioButton
+                                    text="{productsData>productName}"
+                                    select="onProductSelect"
+                                    groupName="productSelection"
+                                />
+                            </VBox>
+                        </CustomListItem>
+                    </items>
+                </List>
+                <f:SimpleForm>
+                    <f:content>
+                        <Label text="Product ID" />
+                        <Text
+                            text="{productModel>/selectedProduct/productId}"
+                        />
+                        <Label text="Product Name" />
+                        <Text
+                            text="{productModel>/selectedProduct/productName}"
+                        />
+                        <Label text="Category" />
+                        <Text text="{productModel>/selectedProduct/category}" />
+                        <Label text="Description" />
+                        <Text
+                            text="{productModel>/selectedProduct/description}"
+                        />
+                        <Label text="Manufacturer" />
+                        <Text
+                            text="{productModel>/selectedProduct/manufacturer}"
+                        />
+                        <Label text="Price" />
+                        <Text text="{productModel>/selectedProduct/price}" />
+                        <Label text="Stock" />
+                        <Text text="{productModel>/selectedProduct/stock}" />
+                        <Label text="Weight" />
+                        <Text text="{productModel>/selectedProduct/weight}" />
+                        <Label text="Material" />
+                        <Text text="{productModel>/selectedProduct/material}" />
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

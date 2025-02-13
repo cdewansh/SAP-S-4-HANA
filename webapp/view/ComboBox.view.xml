@@ -1,0 +1,23 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" controllerName="project1.controller.ComboBox"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="ComboBox" title="{i18n>title}">
+        <content>
+        <ComboBox items = "{jsonData>/employees}" selectionChange="OnSelection" >
+        <core:Item text="{jsonData>name}"></core:Item>
+        </ComboBox>
+        <form:SimpleForm visible="true" >
+        <form:content>
+        <Label text = "Id"></Label>
+        <Text text="{jsonData>/employees/id}"></Text>
+        <Label text = "Location"></Label>
+        <Text text="{jsonData>/employees/location}"></Text>
+        <Label text = "Designation"></Label>
+        <Text text="{jsonData>/employees/designation}"></Text>
+        <Label text = "Experience"></Label>
+        <Text text="{jsonData>/employees/experience}"></Text>
+        </form:content>
+        </form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

@@ -5,6 +5,7 @@ sap.ui.define(
     "sap/m/MessageBox",
     "sap/m/MessageToast"
   ],
+  //function call should have the same order of arguments as defined above.
   function (BaseController, JSONModel, MessageBox, MessageToast) {
     "use strict";
 

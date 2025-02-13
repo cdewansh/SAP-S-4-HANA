@@ -2,15 +2,19 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="UI5 Mini Projects">
-    <Toolbar >
-        <ToolbarSpacer />
+    <!-- <<Toolbar width="100%" >
+        <ToolbarSpacer />> -->
+       <VBox > 
         <Button text="1.Hello World!" press = "OnNavToHello" /> 
         <Button text="2.Css Variables" press = "OnNavToCss" />
         <Button text="3.JS Object &amp; Tables" press = "OnNavToJSO" />
         <Button text="4.json Model" press = "OnNavToJson" />
         <Button text="5.Two Way Data Binding" press = "OnNavTo2Way" />
         <Button text="6.Input List" press = "OnNavToInputList" />
-        </Toolbar>
+        <Button text="7.Form (Enabled)" press = "OnNavToForm" />
+        <Button text="8.Product List (RadioButton, FlexibleColumn)" press = "OnNavToProductList" />
+        <Button text="9.ComboBox" press = "OnNavToComboBox" />
+        </VBox>
         <content>
         </content>
     </Page>

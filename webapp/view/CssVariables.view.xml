@@ -8,7 +8,7 @@
         <Text id ="textID2" text ="{i18n>NICE}" />
         </VBox> -->
         <Button id = "ButtonID" class = "btn" text = "Don't click me" press = "onButtonClick" >
-        </Button>        
+        </Button>
         </content>
     </Page>
 </mvc:View>

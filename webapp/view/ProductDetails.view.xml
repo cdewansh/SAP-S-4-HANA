@@ -1,0 +1,80 @@
+<mvc:View
+    xmlns:f="sap.f"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    controllerName="project1.controller.ProductDetails"
+    displayBlock="true"
+>
+    <Page
+        id="ProductDetails"
+        title="Details"
+    >
+        <content>
+            <Button
+                text="Back to Home"
+                press="onNavBack"
+            />
+            <f:FlexibleColumnLayout id="FCLProductList">
+                <f:beginColumnPages>
+                    <Page title="Product Details">
+                        <content>
+                            <List
+                                id="productList"
+                                items="{productsData>/products}"
+                                mode="SingleSelectMaster"
+                                selectionChange="onProductSelect"
+                            >
+                                <items>
+                                    <StandardListItem
+                                        title="{productsData>productName}"
+                                        description="{productsData>category}"
+                                    />
+                                </items>
+                            </List>
+                        </content>
+                    </Page>
+                </f:beginColumnPages>
+                <f:midColumnPages>
+                    <Page title="Product Details">
+                        <content>
+                            <OverflowToolbar>
+                                <ToolbarSpacer />
+                                <OverflowToolbarButton
+                                    type="Transparent"
+                                    icon="sap-icon://decline"
+                                    press="onClose"
+                                    tooltip="Close column"
+                                />
+                            </OverflowToolbar>
+                            <ObjectHeader
+                                title="{productsData>productName}"
+                                number="{productsData>price}"
+                                numberUnit="USD"
+                            >
+                                <attributes>
+                                    <ObjectAttribute
+                                        title="Category"
+                                        text="{productsData>category}"
+                                    />
+                                    <ObjectAttribute
+                                        title="Manufacturer"
+                                        text="{productsData>manufacturer}"
+                                    />
+                                    <ObjectAttribute
+                                        title="Material"
+                                        text="{productsData>material}"
+                                    />
+                                    <ObjectAttribute
+                                        title="Weight"
+                                        text="{productsData>weight}"
+                                    />
+                                </attributes>
+                            </ObjectHeader>
+                        </content>
+                    </Page>
+                </f:midColumnPages>
+            </f:FlexibleColumnLayout>
+        </content>
+    </Page>
+</mvc:View>
