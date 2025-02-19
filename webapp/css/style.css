@@ -34,4 +34,6 @@
       }
 
       /* Message-Box confirm */
-      
+#toolbar1 {
+  color: rgb(0, 140, 255) !important
+} 

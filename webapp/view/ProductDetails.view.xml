@@ -10,6 +10,7 @@
         id="ProductDetails"
         title="Details"
     >
+    <core:Fragment fragmentName="project1.fragment.sideNavigation" type="XML" />
         <content>
             <Button
                 text="Back to Home"

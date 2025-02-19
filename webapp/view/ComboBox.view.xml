@@ -2,6 +2,7 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="ComboBox" title="{i18n>title}">
+        <core:Fragment fragmentName="project1.fragment.sideNavigation" type="XML" />
         <content>
         <ComboBox items = "{jsonData>/employees}" selectionChange="OnSelection" >
         <core:Item text="{jsonData>name}"></core:Item>
@@ -9,13 +10,13 @@
         <form:SimpleForm visible="true" >
         <form:content>
         <Label text = "Id"></Label>
-        <Text text="{jsonData>/employees/id}"></Text>
+        <Text text="{employeeModel>/selectedEmployee/id}"></Text>
         <Label text = "Location"></Label>
-        <Text text="{jsonData>/employees/location}"></Text>
+        <Text text="{employeeModel>/selectedEmployee/location}"></Text>
         <Label text = "Designation"></Label>
-        <Text text="{jsonData>/employees/designation}"></Text>
+        <Text text="{employeeModel>/selectedEmployee/designation}"></Text>
         <Label text = "Experience"></Label>
-        <Text text="{jsonData>/employees/experience}"></Text>
+        <Text text="{employeeModel>/selectedEmployee/experience}"></Text>
         </form:content>
         </form:SimpleForm>
         </content>

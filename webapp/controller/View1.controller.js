@@ -1,12 +1,17 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/core/Control"
 ],
-function (Controller) {
+function (Controller, Control) {
     "use strict";
 
     return Controller.extend("project1.controller.View1", {
         onInit: function () {
-
+            // Fragment.load({
+            //     name: "project1.fragment.sideNavigation",
+            //     type: "XML",
+            //     controller: "project1.controller.sideNavigation"
+            // })
         },
         OnNavToHello: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
@@ -46,6 +51,13 @@ function (Controller) {
         },
         OnShowHello: function () {
             alert("Hello World")
-        }
+        },
+        onCollapseExpandPress: function () {
+			var oSideNavigation = this.byId('sideNavigation');
+			var bExpanded = oSideNavigation.getExpanded();
+            var bVisible = oSideNavigation.getVisible();
+            oSideNavigation.setVisible(!bVisible);
+			oSideNavigation.setExpanded(!bExpanded);
+		}
     });
 });

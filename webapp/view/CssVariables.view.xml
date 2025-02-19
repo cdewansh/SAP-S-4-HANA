@@ -1,7 +1,8 @@
 <mvc:View controllerName="project1.controller.CssVariables"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:core="sap.ui.core"
     xmlns="sap.m">
     <Page id="CssVariables" title="Amusing">
+        <core:Fragment fragmentName="project1.fragment.sideNavigation" type="XML" />
         <content>
         <!-- <VBox id="_IDGenVBox">
         <Text id ="textID" text ="My first application" class = "textColor" />

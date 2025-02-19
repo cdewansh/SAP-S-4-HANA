@@ -3,11 +3,13 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
 >
     <Page
         id="InputList"
         title="UI5 Mini Projects"
     >
+    <core:Fragment fragmentName="project1.fragment.sideNavigation" type="XML" />
         <Input
             id="productNameInput"
             placeholder="Enter Product name"

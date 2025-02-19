@@ -1,8 +1,9 @@
 <mvc:View controllerName="project1.controller.JsonModel"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m" xmlns:core="sap.ui.core">
 
     <Page id="JsonModel" title="Json Model">
+    <core:Fragment fragmentName="project1.fragment.sideNavigation" type="XML" />
         <content>
        <Table items="{jsonData>/employees}">
                 <columns>

@@ -1,10 +1,12 @@
 <mvc:View controllerName="project1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m" xmlns:core="sap.ui.core">
     <Page id="page" title="UI5 Mini Projects">
     <!-- <<Toolbar width="100%" >
         <ToolbarSpacer />> -->
-       <VBox > 
+        <content>
+        <core:Fragment fragmentName="project1.fragment.sideNavigation" type="XML" />
+      
         <Button text="1.Hello World!" press = "OnNavToHello" /> 
         <Button text="2.Css Variables" press = "OnNavToCss" />
         <Button text="3.JS Object &amp; Tables" press = "OnNavToJSO" />
@@ -14,8 +16,8 @@
         <Button text="7.Form (Enabled)" press = "OnNavToForm" />
         <Button text="8.Product List (RadioButton, FlexibleColumn)" press = "OnNavToProductList" />
         <Button text="9.ComboBox" press = "OnNavToComboBox" />
-        </VBox>
-        <content>
+
+  
         </content>
     </Page>
 </mvc:View>

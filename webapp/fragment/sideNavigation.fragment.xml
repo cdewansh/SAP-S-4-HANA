@@ -1,0 +1,59 @@
+<core:FragmentDefinition
+    xmlns="sap.tnt"
+    xmlns:core="sap.ui.core"
+    xmlns:m="sap.m"
+>
+    <m:Toolbar
+        id="toolbar1"
+        width="100%"
+    >
+        <m:Button
+            icon="sap-icon://menu2"
+            press=".onCollapseExpandPress"
+        />
+    </m:Toolbar>
+    <SideNavigation
+        id="sideNavigation"
+        expanded="false"
+        visible="false"
+    >
+        <NavigationList>
+            <NavigationListItem
+                text="1.Hello World!"
+                select=".OnNavToHello"
+            />
+            <NavigationListItem
+                text="2.Css Variables"
+                select=".OnNavToCss"
+            />
+            <NavigationListItem
+                text="3.JS Object &amp; Tables"
+                select=".OnNavToJSO"
+            />
+            <NavigationListItem
+                text="4.json Model"
+                select=".OnNavToJson"
+            />
+            <NavigationListItem
+                text="5.Two Way Data Binding"
+                select=".OnNavTo2Way"
+            />
+            <NavigationListItem
+                text="6.Input List"
+                select=".OnNavToInputList"
+            />
+            <NavigationListItem
+                text="7.Form (Enabled)"
+                select=".OnNavToForm"
+            />
+            <NavigationListItem
+                text="8.Product List (RadioButton, FlexibleColumn)"
+                select=".OnNavToProductList"
+            />
+            <NavigationListItem
+                text="9.ComboBox"
+                select=".OnNavToComboBox"
+            />
+        </NavigationList>
+    </SideNavigation>
+</core:FragmentDefinition>
