@@ -1,22 +1,31 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel"
+    "sap/ui/model/json/JSONModel",
+    "project1/model/formatter"
 ],
-function (Controller, JSONModel) {
+function (Controller, JSONModel, formatter) {
     "use strict";
-
     return Controller.extend("project1.controller.ComboBox", {
+        formatter: formatter,
         onInit: function () {
-            var oProdModel = this.getOwnerComponent().getModel("jsonData");
+            debugger
+            var oEmployeeModel = this.getOwnerComponent().getModel("jsonData");
             this.getView().setModel(oEmployeeModel, "employeeModel");
-            oProdModel.setProperty("/selectedEmployee", {});
+            oEmployeeModel.setProperty("/selectedEmployee", {});
         },
         OnSelection: function (oEvent) {
-            var oSelect = oEvent.getSource()
-            var oEmployee = oSelect.getBindingContext("jsonData").getObject()
+            var oSelect = oEvent.getSource()  //returns EventProvider where event was triggered
+            var employeeId = oSelect.getSelectedKey();
+            // var oEmployee = oSelect.getBindingContext("jsonData").getObject()
             var  oModel = this.getView().getModel("employeeModel")
-            oModel.setProperty("/selectedEmployee", oEmployee)
+            // oModel.setProperty("/selectedEmployee", oEmployee)
+            var aEmployees = oModel.getProperty("/employees")
+            var selectedEmployee = aEmployees.find(employee => employee.id === employeeId)
+            oModel.setProperty("/selectedEmployee",selectedEmployee)
         },
+
+
+
         OnNavToHello: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             oRouter.navTo("helloWorld")

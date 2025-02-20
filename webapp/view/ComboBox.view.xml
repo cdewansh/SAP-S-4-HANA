@@ -5,7 +5,7 @@
         <core:Fragment fragmentName="project1.fragment.sideNavigation" type="XML" />
         <content>
         <ComboBox items = "{jsonData>/employees}" selectionChange="OnSelection" >
-        <core:Item text="{jsonData>name}"></core:Item>
+        <core:Item text="{jsonData>name}" key="{jsonData>id}"></core:Item>
         </ComboBox>
         <form:SimpleForm visible="true" >
         <form:content>
@@ -14,7 +14,7 @@
         <Label text = "Location"></Label>
         <Text text="{employeeModel>/selectedEmployee/location}"></Text>
         <Label text = "Designation"></Label>
-        <Text text="{employeeModel>/selectedEmployee/designation}"></Text>
+        <Text text="{path: 'employeeModel>/selectedEmployee/designation' ,formatter: '.formatter.tooUpper'}"></Text>
         <Label text = "Experience"></Label>
         <Text text="{employeeModel>/selectedEmployee/experience}"></Text>
         </form:content>
